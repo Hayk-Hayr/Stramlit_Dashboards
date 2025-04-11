@@ -18,7 +18,7 @@ avg_gdp = round(df_plot['gdp'].mean(), 2)
 avg_life_exp = round(df_plot['life_exp'].mean(), 2)
 avg_hdi = round(df_plot['hdi_index'].mean(), 2)
 
-col1, col2, col3 = st.columns([1, 1, 1], )
+col1, col2, col3 = st.columns([1, 1, 1])
 col1.metric(label = 'Average GDP', value=f"{avg_gdp:,.2f}")
 col2.metric(label = 'Average Life Expectancy', value = f"{avg_life_exp:,.2f}")
 col3.metric(label = 'Average HDI', value = f"{avg_hdi:,.2f}")
